@@ -22,6 +22,7 @@ export async function sendEmail({ from, subject, text }: EmailProps) {
         user: process.env.EMAIL_USER,
         pass: process.env.EMAIL_PASS,
       },
+      
      
     });
 
@@ -31,6 +32,7 @@ export async function sendEmail({ from, subject, text }: EmailProps) {
       to: process.env.EMAIL_USER,
       subject,
       text,
+      
     };
 
     // Send the email
