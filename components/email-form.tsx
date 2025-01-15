@@ -22,11 +22,12 @@ export const Emailform = () => {
     setIsLoading(true);
     setServerError(null);
     setSuccessMessage(null);
+
   
     try {
       await sendEmail({
         from: data.email,
-        subject: `Subject:${data.subject} New message from ${data.email}`,
+        subject: `Subject:${data.subject}. New message from ${data.email}`,
         text: data.message,
       });
   
@@ -58,8 +59,7 @@ export const Emailform = () => {
       </div>
       <div>
         <Label className="block text-sm font-medium text-white">Subject</Label>
-        <Input {...register("name")} placeholder="subject..." />
-        {errors.name && <p className="text-red-500 text-sm">{errors.name.message}</p>}
+        <Input {...register("subject")} placeholder="subject..." />
       </div>
 
       {/* Message Textarea */}
