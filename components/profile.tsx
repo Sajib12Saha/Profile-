@@ -34,7 +34,7 @@ export const Profile = () => {
 
             {/* Profile Section */}
             <div className="flex gap-x-4 w-full items-center lg:flex-col lg:gap-y-8">
-                <div className="relative w-[210px] md:w-[300px]  h-[130px] md:h-[350px]">
+                <div className="relative w-40 h-32 sm:w-44 sm:h-48 md:w-52 md:h-56">
                    
                 
                     <Image
