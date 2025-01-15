@@ -26,7 +26,7 @@ export const Emailform = () => {
     try {
       await sendEmail({
         from: data.email,
-        subject: `New message from ${data.name}`,
+        subject: `Subject:${data.subject} New message from ${data.email}`,
         text: data.message,
       });
   
@@ -49,11 +49,17 @@ export const Emailform = () => {
         {errors.name && <p className="text-red-500 text-sm">{errors.name.message}</p>}
       </div>
 
+
       {/* Email Input */}
       <div>
         <Label className="block text-sm font-medium text-white">Email</Label>
         <Input {...register("email")} placeholder="example@gmail.com" />
         {errors.email && <p className="text-red-500 text-sm">{errors.email.message}</p>}
+      </div>
+      <div>
+        <Label className="block text-sm font-medium text-white">Subject</Label>
+        <Input {...register("name")} placeholder="subject..." />
+        {errors.name && <p className="text-red-500 text-sm">{errors.name.message}</p>}
       </div>
 
       {/* Message Textarea */}
@@ -70,7 +76,7 @@ export const Emailform = () => {
       {/* Submit Button */}
       <button
         type="submit"
-        className="w-full px-4 py-2 bg-purple-500 text-white"
+        className="w-full px-4 py-2 bg-purple-800 text-white rounded-md hover:bg-purple-600"
         disabled={isLoading}
       >
         {isLoading ? "Sending..." : "Send Message"}
