@@ -11,7 +11,7 @@ export const SocialMedia = () => {
         </div>
         <div className="flex items-center justify-center w-full gap-x-8">
         {SOCIAL_MEDIA.map(({link, img})=> (
-            <Link href={link} className="flex items-center justify-center rounded-full size-5 md:size-8 lg:size-12 relative">
+            <Link href={link} className="flex items-center justify-center rounded-full size-12 md:size-20 lg:size-32 relative">
                 <Image
                 src={img}
                 alt={'social_media'}

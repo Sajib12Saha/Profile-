@@ -8,12 +8,13 @@ export const Email = () => {
 
             </div>
             <div className="md:col-span-5 px-2">
-            <div className='relative w-full h-[370px] md:h-[450px]'>
+            <div className='relative w-full 
+            h-80 sm:h-[40rem] md:h-[]'>
                 <Image
                 src={'/images/sojib-frame.png'}
                 alt={'Sojib'}
                 fill
-                className="object-cover"
+                className="object-cover rounded-large"
                 />
 
             </div>

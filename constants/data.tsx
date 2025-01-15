@@ -1,6 +1,7 @@
 import {Home,  CircleUser, FolderGit, FlaskConical } from 'lucide-react';
 
 
+
 export const NAVITEMS= [
     {
         name:"Home",
@@ -85,4 +86,8 @@ export const SOCIAL_MEDIA=[
         {img:"/icons/github.svg", link:"https://github.com/Sajib12Saha",},
         {img:"/icons/linkedin.svg", link:"https://www.linkedin.com/in/sojib-saha-59457323a",},
         {img:"/icons/facebook.svg", link:"https://www.facebook.com/sojib.saha.942145",},
+        {
+            img:"/icons/upwork.svg",
+            link:"https://www.upwork.com/freelancers/~01b704e226a1c55b7a"
+        }
     ]
