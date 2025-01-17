@@ -16,6 +16,12 @@
   }
 }
 
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
 body {
   background-color: #11071F;
   color: white;

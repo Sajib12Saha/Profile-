@@ -1,14 +1,10 @@
 
-
 import { NAVITEMS } from "@/constants/data";
 import Link from "next/link";
 import { MobileNav } from "./mobile-nav";
 import Image from 'next/image';
 
-import { cn } from "@/lib/utils";
-
 export const Navbar = () => {
-
     return (
         <div className="h-20 w-full flex items-center sticky top-0 z-50" style={{
             backgroundImage: "url('/images/background.png')",
@@ -30,14 +26,8 @@ export const Navbar = () => {
                         <Link 
                             key={name} 
                             href={link} 
-                            className={cn(
-                                "flex gap-x-2 items-center group",
-                            
-                            )}
-                        >
-                            <h2 className={cn(
-                                "text-md transition-transform transform group-hover:scale-110 group-hover:text-purple-300 group-hover:shadow-lg group-hover:tracking-wider duration-300 ease-in-out"
-                            )}>
+                            className="flex gap-x-2 items-center group">
+                            <h2 className= "text-md transition-transform transform group-hover:scale-110 group-hover:text-purple-300 group-hover:shadow-lg group-hover:tracking-wider duration-300 ease-in-out">
                                 {name} 
                             </h2>
                         </Link>
