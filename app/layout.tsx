@@ -20,7 +20,7 @@ const inter = Poppins({ subsets: ["latin"],
 export const metadata: Metadata = {
   title: "Sajib Chandra Saha",
   description: "This is my portflio website",
-  icons: [{
+    icons: [{
     url: "/images/s.png",
     href:"/images/s.png",
     sizes:"200x200",
