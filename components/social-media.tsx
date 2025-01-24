@@ -6,12 +6,12 @@ import {SOCIAL_MEDIA} from '@/constants/data';
 import {motion} from 'framer-motion'
 export const SocialMedia = () => {
     return (
-        <div className="mt-4 space-y-10">
+        <div className="mt-4 space-y-10 px-4">
         <div className=" flex items-center justify-center w-full">
             <p className="text-xs md:text-sm text-neutral-300 flex gap-x-2 items-center">Also Connect <span><Icon className="size-3 md:size-4"/></span></p>
             
         </div>
-        <div className="flex items-center justify-center w-full gap-x-8">
+        <div className="flex items-center justify-center w-full gap-x-4 md:gap-x-8">
         {SOCIAL_MEDIA.map(({link, img}, index)=> (
             <motion.div
             key={index}
