@@ -41,7 +41,7 @@ export const Profile = () => {
                         src="/images/sojib2.png"
                         alt="Sajib"
                         fill
-                        className="shadow-md rounded-xl object-cover" 
+                        className="shadow-md rounded-full object-cover" 
                     />
                 </div>
                 <div className="flex flex-col">
