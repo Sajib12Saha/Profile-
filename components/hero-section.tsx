@@ -28,7 +28,7 @@ export const HeroSection = () => {
             />
             <div className="flex flex-col gap-y-10 lg:py-20">
                 <div className="flex flex-col gap-y-2 justify-center w-full">
-                    <h1 className='text-2xl md:text-3xl lg:text-4xl'>I'm a Web developer.|</h1>
+                    <h1 className='text-2xl md:text-3xl lg:text-4xl'>I'm a Web developer.</h1>
                     <span className='inline-flex gap-x-2 items-center'>
                     <p className='text-sm md:text-md'>Currently, I am a web developer as a freelancer
               
