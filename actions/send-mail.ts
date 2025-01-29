@@ -23,7 +23,7 @@ export async function sendEmail({ from, subject, text }: EmailProps) {
         pass: process.env.EMAIL_PASS,
       },  
       tls: {
-        rejectUnauthorized: true, // Ignore invalid certificates
+        rejectUnauthorized: true, 
       },
 
       
