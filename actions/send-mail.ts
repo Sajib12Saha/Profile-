@@ -9,13 +9,13 @@ interface EmailProps {
 }
 
 export async function sendEmail({ from, subject, text }: EmailProps) {
-  // Validation
+
   if (!from || !subject || !text) {
     throw new Error("Missing required fields");
   }
 
   try {
-    // Nodemailer configuration
+
     const transporter = nodemailer.createTransport({
       service: "gmail",
       auth: {
@@ -30,13 +30,12 @@ export async function sendEmail({ from, subject, text }: EmailProps) {
      
     });
 
-    console.log({from,subject,text})
     const mailOptions = {
-      from,
-      to: process.env.EMAIL_USER,
+      from: `"${from.split("@")[0]}" <${process.env.EMAIL_USER}>`, 
+      to: process.env.EMAIL_USER, 
       subject,
       text,
-      
+      replyTo: from, 
     };
 
     // Send the email

@@ -33,15 +33,15 @@ export const Profile = () => {
             </div>
 
             {/* Profile Section */}
-            <div className="flex gap-x-4 w-full items-center lg:flex-col lg:gap-y-8">
-                <div className="relative w-40 h-32 sm:w-44 sm:h-48 md:w-52 md:h-56">
+            <div className="flex gap-x-2 w-full items-center lg:flex-col lg:gap-y-8">
+                <div className="relative w-48 h-32 sm:h-48 md:w-52 md:h-56">
                    
                 
                     <Image
                         src="/images/sojib2.png"
                         alt="Sajib"
                         fill
-                        className="shadow-md rounded-xl object-cover" 
+                        className="box-shadow rounded-xl object-cover" 
                     />
                 </div>
                 <div className="flex flex-col">
